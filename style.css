@@ -1,5 +1,187 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+.cv_wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    /* grid-template-rows: auto auto auto; */
+}
+
+.header {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    border-bottom: 1px solid;
+    align-items: center;
+}
+
+.header > img {
+    width: 75%;
+    border-radius: 50%;
+}
+
+.info > span {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.contact_item {
+    margin: 8px;
+    display: grid;
+    grid-template-columns: 36px auto;
+    align-items: center;
+}
+
+.contact_item > span {
+    margin-left: 8px;
+}
+
+.contact_item > span > a {
+    color: black;
+}
+
+.contact_item > img {
+    width: 20px;
+}
+
+h2 {
+    margin: 24px 0px 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(31, 119, 177);
+}
+
+
+.main {
+    padding-left: 20%;
+    display: grid;
+    grid-template-columns: auto 50%;
+    grid-template-rows: auto auto;
+}
+
+.summary {
+    grid-column: 1 / 3;
+}
+
+.summary > div {
+    margin-bottom: 24px;
+
+}
+
+.experience {
+    grid-column: 1 / 3;
+    border-bottom: 1px solid lightgray;
+}
+
+.exp_item {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: baseline;
+}
+
+.place {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.date {
+    margin-top: 8px;
+    padding-left: 8px;
+    color: gray;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.exp_description > p {
+    font-weight: 600;
+    color: rgb(54, 54, 54);
+}
+
+.exp_description > ul {
+    padding: 0 16px;
+}
+
+.edu_item {
+    margin: 24px 0px;
+}
+
+.degree {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.education {
+    margin-top: 24px;
+    border-right: 1px solid lightgray;
+}
+
+.extra_info {
+    margin-top: 24px;
+    padding: 0 24px;
+}
+
+.lang_item {
+    margin: 8px 0px;
+    display: grid;
+    grid-template-columns: 80px auto;
+    align-items: center;
+}
+
+.lang_item > .proficiency {
+    font-size: 14px;
+}
+
+
+.skills > ul {
+    padding: 0 16px;
+}
+
+.skills > ul > li {
+    margin: 8px 0;
+}
+
+.projects > a{
+    color: black;
+    font-style: italic;
+}
+
+.code_example {
+    margin-top: 36px;
+    width: 100%;
+    grid-column: 1 / 3;
+}
+
+.code_example > pre {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    padding: 16px;
+}
+
+footer {
+    height: 48px;
+    margin-top: 36px;
+    background-color: rgb(31, 119, 177);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content:space-around;
+    color: white;
+    font-size: 12px;
+}
+
+footer > a > img {
+    height: 24px;
+}
+
+footer > span > a {
+    color: white;
+}
+
